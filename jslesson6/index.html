@@ -152,6 +152,20 @@
 
       // Решение:
 
+      function createCalendar(elem, year, month) {
+
+let table = '<table><tr><th>пн</th><th>вт</th><th>ср</th><th>чт</th><th>пт</th><th>сб</th><th>вс</th></tr><tr>';
+
+for (let i = 0; i < day; i++) {
+  table += '<td></td>';
+}
+
+table += '</tr></table>';
+
+elem.innerHTML = table;
+}
+
+createCalendar(calendar, year, month);
     </script>
   </body>
 </html>
